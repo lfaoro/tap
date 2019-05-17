@@ -2,9 +2,9 @@
 class Ncrypt < Formula
   desc "a geeky & friendly way to simply encrypt locally & share."
   homepage "https://github.com/lfaoro"
-  url "https://github.com/lfaoro/ncrypt/releases/download/v1.0.0-alpha/ncrypt_1.0.0-alpha_darwin_amd64.tar.gz"
-  version "1.0.0-alpha"
-  sha256 "212d6476b937ee10280917ee68cf490998e711e4ec9b3f77d84b0be5d336caf4"
+  url "https://github.com/lfaoro/ncrypt/releases/download/v1.0.0/ncrypt_1.0.0_darwin_amd64.tar.gz"
+  version "1.0.0"
+  sha256 "52bc29772474eafc21fa0ef83a7bb5217f99001180d6b01119dd3ec508975842"
 
   def install
     bin.install "ncrypt"
