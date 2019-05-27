@@ -2,9 +2,9 @@
 class Ion < Formula
   desc "a geeky & friendly way to simply encrypt locally & share."
   homepage "https://github.com/lfaoro/ion"
-  url "https://github.com/lfaoro/ion/releases/download/v2.0.0/ion_2.0.0_darwin_amd64.tar.gz"
-  version "2.0.0"
-  sha256 "8460caf45a7117969f473b94f2cf0173d6814a1c36e25e0d314efcb068ec9521"
+  url "https://github.com/lfaoro/ion/releases/download/v2.0.1/ion_2.0.1_darwin_amd64.tar.gz"
+  version "2.0.1"
+  sha256 "ae8cade8b52437815757f9288793c3b6b044be5b24c50ad5d56acfa7ff9a8013"
 
   def install
     bin.install "ion"
