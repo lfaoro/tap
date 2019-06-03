@@ -2,9 +2,9 @@
 class Flares < Formula
   desc "Flares is a CloudFlare DNS backup tool"
   homepage "https://github.com/lfaoro/flares"
-  url "https://github.com/lfaoro/flares/releases/download/v2.0.0-beta/flares_2.0.0-beta_darwin_amd64.tar.gz"
-  version "2.0.0-beta"
-  sha256 "ab45164df3add851cf1010b934bfbeadb42bee279ce2c538c074a6eb23200dff"
+  url "https://github.com/lfaoro/flares/releases/download/v2.0.0/flares_2.0.0_darwin_amd64.tar.gz"
+  version "2.0.0"
+  sha256 "77856248284bba406a6680e5535e88c7157d35b6c332ce3774d60b4349e4993a"
 
   def install
     bin.install "flares"
