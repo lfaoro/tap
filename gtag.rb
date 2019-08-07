@@ -2,15 +2,15 @@
 class Gtag < Formula
   desc "gTag is a $(git tag) workflow tool for semantic versioning (semver.org)"
   homepage "https://github.com/lfaoro/gtag"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/lfaoro/gtag/releases/download/0.1.0/gtag_0.1.0_darwin_amd64.tar.gz"
-    sha256 "947e663724d24a9d6778a6c65d52418f366fdbb18640b4368bcfc2142799ae88"
+    url "https://github.com/lfaoro/gtag/releases/download/0.1.1/gtag_0.1.1_darwin_amd64.tar.gz"
+    sha256 "3af746ba8e96a796e02d525e4676f56c45a4729a6a34bf4c94dc4e2080d700aa"
   elsif OS.linux?
-    url "https://github.com/lfaoro/gtag/releases/download/0.1.0/gtag_0.1.0_linux_amd64.tar.gz"
-    sha256 "141772d9d19509df9a516f147f4863005e5319ac0b8a260b8aec8bf77df3a3c4"
+    url "https://github.com/lfaoro/gtag/releases/download/0.1.1/gtag_0.1.1_linux_amd64.tar.gz"
+    sha256 "6d495ec2f93f84705f2af7be4268697c411c3c4134ff6a6533f32c7d17cdfdf6"
   end
 
   def install
