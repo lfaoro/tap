@@ -10,7 +10,7 @@ class Troca < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lfaoro/troca/releases/download/v0.0.1/troca_darwin_x86_64"
-      sha256 "a487622059191eba868e0f18c0b97dda533ed84190da246889b9236a97797004"
+      sha256 "31041fd694e7854a0857e465d2c30d4c4b6c2b44474f863ab14e66aca928266c"
 
       def install
         bin.install "troca_darwin_x86_64" => "troca"
@@ -18,7 +18,7 @@ class Troca < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lfaoro/troca/releases/download/v0.0.1/troca_darwin_arm64"
-      sha256 "f185594fab438f2db5a6884ee04acc1b652f81bff77ce212a2fa0351e400a9f7"
+      sha256 "de5ca07ab16b04b91a6cbe9202a1681a9aaacb0a0ed7dbb567258bbb226c35a0"
 
       def install
         bin.install "troca_darwin_arm64" => "troca"
@@ -30,7 +30,7 @@ class Troca < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/lfaoro/troca/releases/download/v0.0.1/troca_linux_x86_64"
-        sha256 "b80d1ecb78f83fc574b9e4f7be983e7f88ec19741d22c2ff4061f0495ea1f8d6"
+        sha256 "0dea390c56508f9580d3d194e4a9bcea50c3f2268757121892e1afca133993a2"
 
         def install
           bin.install "troca_linux_x86_64" => "troca"
@@ -40,7 +40,7 @@ class Troca < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/lfaoro/troca/releases/download/v0.0.1/troca_linux_arm64"
-        sha256 "312bd6edcc0ef95c40b0a9a9eb8606960eb98b524e36d54a3c1de82e3e8b06a8"
+        sha256 "f8a3b7ccbb97c256a141f8bbb174c118cd169e682e5f4101e6a22641ebdc96d7"
 
         def install
           bin.install "troca_linux_arm64" => "troca"
