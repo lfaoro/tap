@@ -10,7 +10,7 @@ class Tswap < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lfaoro/tswap/releases/download/v0.0.1/tswap_darwin_x86_64"
-      sha256 "8b0c2538bd96f9b5cc557cdd92c40aca3f30ae7fa924397a61f88351ad0748a4"
+      sha256 "ae094a651bcc7425d52691fd68da611edc7f2537cfcc174fa81821f3a778c4d0"
 
       def install
         bin.install "tswap_darwin_x86_64" => "tswap"
@@ -18,7 +18,7 @@ class Tswap < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lfaoro/tswap/releases/download/v0.0.1/tswap_darwin_arm64"
-      sha256 "ea72efd1638c38456483befff49847bfe5ccd692bcc109b01f175f59fa3b125f"
+      sha256 "d2f7265c902feae919ab6cefd5a8241ae0ed033e358cf98f94956c0ad6508456"
 
       def install
         bin.install "tswap_darwin_arm64" => "tswap"
@@ -30,7 +30,7 @@ class Tswap < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/lfaoro/tswap/releases/download/v0.0.1/tswap_linux_x86_64"
-        sha256 "988c5fe523954694c0d71e66ecd408540119b044416930e46e20c24c59b7b521"
+        sha256 "447e14e3855462b1629650ee0220ebbd279e514076674e2584abb4f133b881f3"
 
         def install
           bin.install "tswap_linux_x86_64" => "tswap"
@@ -40,7 +40,7 @@ class Tswap < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/lfaoro/tswap/releases/download/v0.0.1/tswap_linux_arm64"
-        sha256 "2f8fdaa32ee7b218e0c2df20ff0216740bb62427e2a432f6805cbb8be647b2d6"
+        sha256 "58f0ab018fcc3a72982e0b783e4b48b7c964c6936067e4fc30dc685b2a468b4f"
 
         def install
           bin.install "tswap_linux_arm64" => "tswap"
