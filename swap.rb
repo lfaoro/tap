@@ -10,7 +10,7 @@ class Swap < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_darwin_x86_64"
-      sha256 "eb14e49925af4f0adff456f0edae49d7130b54ab97914825d759cbd5a8d34457"
+      sha256 "6c2f1422e3e8a7b0c6219b7e59f4663f2473e84883c97628ba438fa296ddf1dc"
 
       def install
         bin.install "swap_darwin_x86_64" => "swap"
@@ -18,7 +18,7 @@ class Swap < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_darwin_arm64"
-      sha256 "e603284d64fc55fcb78f79c86997a22ab4ae433a278d04302d899dec29050b37"
+      sha256 "666589cfd7eb76a95767508320eb4f358eed25a3ff11e3b65aee6de57989f359"
 
       def install
         bin.install "swap_darwin_arm64" => "swap"
@@ -30,7 +30,7 @@ class Swap < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_linux_x86_64"
-        sha256 "4a1bff0f5e1441f96c7bc27488841005d6f77391b3adad2cda80628e2b3d7ae6"
+        sha256 "0b65e08bf30757986136f0568dd4d331abe46c9cf778e95c3b5974f8f2a96906"
 
         def install
           bin.install "swap_linux_x86_64" => "swap"
@@ -40,7 +40,7 @@ class Swap < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_linux_arm64"
-        sha256 "7e10068177fc4aecdbd9ef92680cdde000ab1c01565cea2194a4c2017c097f99"
+        sha256 "c572a46e261b9a0ed32266501e58f1378e7240154887bbbdf39345f74b10ce53"
 
         def install
           bin.install "swap_linux_arm64" => "swap"
