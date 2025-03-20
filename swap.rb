@@ -5,20 +5,20 @@
 class Swap < Formula
   desc "The Crypto Swap Terminal"
   homepage "https://github.com/lfaoro/swap"
-  version "0.0.1"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_darwin_x86_64"
-      sha256 "756c15f6ec4abe5dea4ca758d820a713fce0f8a6a4ac978eca8025ba433dc66b"
+      url "https://github.com/lfaoro/swap/releases/download/v1.0.0/swap_darwin_x86_64"
+      sha256 "87e1ea4e0237cb388e67754ccadd581d27af95c94973e4ce40b98da418c5bedf"
 
       def install
         bin.install "swap_darwin_x86_64" => "swap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_darwin_arm64"
-      sha256 "d9c19282af5ed301c952380bf24a7c48b3d48d5091c8b44c0a635716d078ddb2"
+      url "https://github.com/lfaoro/swap/releases/download/v1.0.0/swap_darwin_arm64"
+      sha256 "164454730ff2672362e4e156ef054cebd2f01a92bd9ed7395ccc7a4d823c0451"
 
       def install
         bin.install "swap_darwin_arm64" => "swap"
@@ -29,8 +29,8 @@ class Swap < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_linux_x86_64"
-        sha256 "20f3e842eade540ee7a181c28f3a08ed74c018f3c8a5b0b41aea53bdbe5c83d7"
+        url "https://github.com/lfaoro/swap/releases/download/v1.0.0/swap_linux_x86_64"
+        sha256 "bc873ca95e4e1486a84f454c35e61a53574ffa5da2c8ea1f2a521ed8d4fc7cc0"
 
         def install
           bin.install "swap_linux_x86_64" => "swap"
@@ -39,8 +39,8 @@ class Swap < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lfaoro/swap/releases/download/v0.0.1/swap_linux_arm64"
-        sha256 "65740b06f32682d23d6d2bbf8434bf5b9a6922a8d4fc6e5e3af569adb8e25f2b"
+        url "https://github.com/lfaoro/swap/releases/download/v1.0.0/swap_linux_arm64"
+        sha256 "2b402f8a99b7730d8309714ed234737d8e449a20cc3f2c468fab58ac429506b4"
 
         def install
           bin.install "swap_linux_arm64" => "swap"
