@@ -9,7 +9,7 @@ class Ssm < Formula
 
   on_macos do
     url "https://github.com/lfaoro/ssm/releases/download/0.3.3/ssm_0.3.3_darwin_all.tar.gz"
-    sha256 "be8a9af1a7acc4b8cb8c739d542df50b3a9c77bf5749c024297925a017b667d4"
+    sha256 "dc0d3402b0e369a89df3459d75c23929ce0a2dca7aca886d93c013a7a31b2ff0"
 
     def install
       bin.install "ssm"
@@ -19,21 +19,21 @@ class Ssm < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/lfaoro/ssm/releases/download/0.3.3/ssm_0.3.3_linux_x86_64.tar.gz"
-      sha256 "a7fe7d7d0362e337b67b20cdd9f1031394bd596d3b10e3615356478ff52be89f"
+      sha256 "089173390601ae165122f114158fc8ea7c963b997b3399484dc4c7148498b5bd"
       def install
         bin.install "ssm"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
       url "https://github.com/lfaoro/ssm/releases/download/0.3.3/ssm_0.3.3_linux_armv6.tar.gz"
-      sha256 "30c00db73db481d338bab2d08267cb5472a7bdf30cac6fab2f06cb12a0fffede"
+      sha256 "aab743d31e539b9f7ab19c1f8c53c47147a706f53b7640f10d6e5332d538a263"
       def install
         bin.install "ssm"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/lfaoro/ssm/releases/download/0.3.3/ssm_0.3.3_linux_arm64.tar.gz"
-      sha256 "7394e618d7aac555e949f5e14d18c23eaef8c59cd7bec9dc4fb5caf78ba802b2"
+      sha256 "44e27398e2da40d33921db539b525f82568fe51ca6e7522f208fcab7c8055eeb"
       def install
         bin.install "ssm"
       end
