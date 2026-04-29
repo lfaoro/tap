@@ -11,26 +11,26 @@
 let
   inherit (stdenvNoCC.hostPlatform) system;
   shaMap = {
-    i686-linux = "0jh14gbq18ipiqm32jg8mnv08x241mbglmj7cjglrfq8nv6wrsiq";
-    x86_64-linux = "189nppp9zxzbfz5hdslh3x7040w3348w3ihnb5m1jqmzapf8ayrg";
-    armv6l-linux = "1xrq3pjwilqnc5hpapgrbxv6l9rzpmyaskkwllnydivc4x5wlw5s";
-    aarch64-linux = "0rj9z7rpv6gabl5w78b65vgwvbmdf03pwkcnmkv31w3dplw9lqs2";
-    x86_64-darwin = "0a1cjnyz9vz2rv2y4wvmmhazalc9ci9ag7wsxkz3z4y0f5hkxa1d";
-    aarch64-darwin = "0a1cjnyz9vz2rv2y4wvmmhazalc9ci9ag7wsxkz3z4y0f5hkxa1d";
+    i686-linux = "0635jqk523c7haf7isdi7wa5xl19fk9k24dp86qr3lc3jaa8i8cg";
+    x86_64-linux = "1mvfzcc15226apbkrrbcwbinkz0a618hkpdl62668cihksj0c3x1";
+    armv6l-linux = "19nn91xbiz338ja6mn50vj8w0aa0a8zxs0p29j2r5i58ahcrq917";
+    aarch64-linux = "1f0am3v3d6s3ys4yyflki7nmxarzqm6720gjhb7pqfnhyadhbk03";
+    x86_64-darwin = "0gbc6xni129l1jzkln6lhs347vnigqq3wzx6vfd9wjaja0y4kxf3";
+    aarch64-darwin = "0gbc6xni129l1jzkln6lhs347vnigqq3wzx6vfd9wjaja0y4kxf3";
   };
 
   urlMap = {
-    i686-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.1/ssm_0.4.1_linux_i386.tar.gz";
-    x86_64-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.1/ssm_0.4.1_linux_x86_64.tar.gz";
-    armv6l-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.1/ssm_0.4.1_linux_armv6.tar.gz";
-    aarch64-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.1/ssm_0.4.1_linux_arm64.tar.gz";
-    x86_64-darwin = "https://github.com/lfaoro/ssm/releases/download/0.4.1/ssm_0.4.1_darwin_all.tar.gz";
-    aarch64-darwin = "https://github.com/lfaoro/ssm/releases/download/0.4.1/ssm_0.4.1_darwin_all.tar.gz";
+    i686-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_i386.tar.gz";
+    x86_64-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_x86_64.tar.gz";
+    armv6l-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_armv6.tar.gz";
+    aarch64-linux = "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_arm64.tar.gz";
+    x86_64-darwin = "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_darwin_all.tar.gz";
+    aarch64-darwin = "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_darwin_all.tar.gz";
   };
 in
 stdenvNoCC.mkDerivation {
   pname = "ssm";
-  version = "0.4.1";
+  version = "0.4.2";
   src = fetchurl {
     url = urlMap.${system};
     sha256 = shaMap.${system};
