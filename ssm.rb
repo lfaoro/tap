@@ -5,11 +5,11 @@
 class Ssm < Formula
   desc "SSM | Secure Shell Manager"
   homepage "https://github.com/lfaoro/ssm"
-  version "0.4.2"
+  version "1.0.0"
 
   on_macos do
-    url "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_darwin_all.tar.gz"
-    sha256 "c3f5493c5052499e9adba67f3e307ed1ee438686d4583abf0c3489106d376c3d"
+    url "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_darwin_all.tar.gz"
+    sha256 "f9193f1028cf3c489d1b4e0b50daacf53cee52c2655b8a9e436a044f908ace3c"
 
     define_method(:install) do
       bin.install "ssm"
@@ -18,22 +18,22 @@ class Ssm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_x86_64.tar.gz"
-      sha256 "a10f06a49e3032648c30b4dd0951300afc69e3e26ce53cd75546881218fb6ed7"
+      url "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_x86_64.tar.gz"
+      sha256 "c0b2bdcf09e141f37ad1e356ce3fead7343dc7e200d25f299b02b227140211b0"
       define_method(:install) do
         bin.install "ssm"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_armv6.tar.gz"
-      sha256 "27249c1954a8c492854ce202dd3f524029c091dca0d86a944463fcb87a48d6a6"
+      url "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_armv6.tar.gz"
+      sha256 "55d6df1fa72dd428a36857394f989c10312a61eebea9c7823a6c63fc26a4c2d9"
       define_method(:install) do
         bin.install "ssm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lfaoro/ssm/releases/download/0.4.2/ssm_0.4.2_linux_arm64.tar.gz"
-      sha256 "03cc059bf2d03a7ccf82f201714cc53fab5eed89933aef89f6439b36f6a80ab8"
+      url "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_arm64.tar.gz"
+      sha256 "c1212346caecf3efbc39af10792034f9cfe1d10dc405125450f77c116a034f87"
       define_method(:install) do
         bin.install "ssm"
       end
