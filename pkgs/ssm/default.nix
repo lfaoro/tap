@@ -11,26 +11,22 @@
 let
   inherit (stdenvNoCC.hostPlatform) system;
   shaMap = {
-    i686-linux = "0cd4x7z44if8p2vwwqr2zry91zickp89jnirirwbwyv9xwnah868";
-    x86_64-linux = "0h1yqwx6bynh0sb2hy2zkv3bpn3a5cl792nl6b0qdssba6lbwiyr";
-    armv6l-linux = "1l0vd0i986s7cjh2p2jb6zddkzj2f49jb718d17ndcmi6qs8g6fk";
-    aarch64-linux = "1i3aj5dnr1jhzslpsgq815cafjxhjb0azknzdnc8s4nqfbm1hrsj";
-    x86_64-darwin = "09cgxsb90lrhyf49flm3jlpnk0p5dv6fl5ccrvmkafkdqm72np4v";
-    aarch64-darwin = "09cgxsb90lrhyf49flm3jlpnk0p5dv6fl5ccrvmkafkdqm72np4v";
+    x86_64-linux = "0k8hn1ywcp9bd4gy1qcxdzdmdwzv5m68v090ss32pvd8andmdzl2";
+    aarch64-linux = "1w6rrzzfqq9nr5gkyg4hr05grg3j1yzmgwl9yfb5v8a9p6qjia0r";
+    x86_64-darwin = "0ql1l36743k25f6b56khbzz9flmq8l34gjxi8mqgssrn008kpgw4";
+    aarch64-darwin = "0ql1l36743k25f6b56khbzz9flmq8l34gjxi8mqgssrn008kpgw4";
   };
 
   urlMap = {
-    i686-linux = "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_i386.tar.gz";
-    x86_64-linux = "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_x86_64.tar.gz";
-    armv6l-linux = "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_armv6.tar.gz";
-    aarch64-linux = "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_linux_arm64.tar.gz";
-    x86_64-darwin = "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_darwin_all.tar.gz";
-    aarch64-darwin = "https://github.com/lfaoro/ssm/releases/download/1.0.0/ssm_1.0.0_darwin_all.tar.gz";
+    x86_64-linux = "https://github.com/lfaoro/ssm/releases/download/1.0.1/ssm_1.0.1_linux_x86_64.tar.gz";
+    aarch64-linux = "https://github.com/lfaoro/ssm/releases/download/1.0.1/ssm_1.0.1_linux_arm64.tar.gz";
+    x86_64-darwin = "https://github.com/lfaoro/ssm/releases/download/1.0.1/ssm_1.0.1_darwin_all.tar.gz";
+    aarch64-darwin = "https://github.com/lfaoro/ssm/releases/download/1.0.1/ssm_1.0.1_darwin_all.tar.gz";
   };
 in
 stdenvNoCC.mkDerivation {
   pname = "ssm";
-  version = "1.0.0";
+  version = "1.0.1";
   src = fetchurl {
     url = urlMap.${system};
     sha256 = shaMap.${system};
@@ -55,8 +51,6 @@ stdenvNoCC.mkDerivation {
     platforms = [
       "aarch64-darwin"
       "aarch64-linux"
-      "armv6l-linux"
-      "i686-linux"
       "x86_64-darwin"
       "x86_64-linux"
     ];
