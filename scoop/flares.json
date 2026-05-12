@@ -1,0 +1,22 @@
+{
+    "version": "4.0.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lfaoro/flares/releases/download/v4.0.1/flares_4.0.1_windows_amd64.zip",
+            "bin": [
+                "flares.exe"
+            ],
+            "hash": "faaed3d6b3e5450d6f8bcdf279b1e20790443422f6426864237038c3d558b8fe"
+        },
+        "arm64": {
+            "url": "https://github.com/lfaoro/flares/releases/download/v4.0.1/flares_4.0.1_windows_arm64.zip",
+            "bin": [
+                "flares.exe"
+            ],
+            "hash": "853342623272f920fd2944d5c4d539a795ab74a83c32825bb1fe5923f4bc01b2"
+        }
+    },
+    "homepage": "https://github.com/lfaoro/flares",
+    "license": "MIT",
+    "description": "Cloudflare DNS backup tool — export DNS records as BIND zone files"
+}
