@@ -12,7 +12,7 @@ Installers:
       - RelativeFilePath: flares.exe
         PortableCommandAlias: flares
     InstallerUrl: https://github.com/lfaoro/flares/releases/download/v4.0.1/flares_4.0.1_windows_arm64.zip
-    InstallerSha256: 853342623272f920fd2944d5c4d539a795ab74a83c32825bb1fe5923f4bc01b2
+    InstallerSha256: aa6396b7f2e38f6565d0355a4db2738c4793ec48d97cf846055f66e050253331
     UpgradeBehavior: uninstallPrevious
   - Architecture: x64
     NestedInstallerType: portable
@@ -20,7 +20,7 @@ Installers:
       - RelativeFilePath: flares.exe
         PortableCommandAlias: flares
     InstallerUrl: https://github.com/lfaoro/flares/releases/download/v4.0.1/flares_4.0.1_windows_amd64.zip
-    InstallerSha256: faaed3d6b3e5450d6f8bcdf279b1e20790443422f6426864237038c3d558b8fe
+    InstallerSha256: 04f4a8d494482d1e96c4ff1ae97db2ccaa3b12d4d9af36a65adbfe986b13ba0b
     UpgradeBehavior: uninstallPrevious
 ManifestType: installer
 ManifestVersion: 1.12.0
