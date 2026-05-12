@@ -4,22 +4,22 @@ cask "flares" do
 
   on_macos do
     on_intel do
-      sha256 "65b635129e51a32e0eb8b8fd6f6d7ec8a1f2ae01d6edcfa27c90d5e3e5eba6fe"
+      sha256 "efb4038a401ee9cd1ee2c47dbb9a471d84ab6cfe17ecaeec680020ab23fd4915"
       url "https://github.com/lfaoro/flares/releases/download/v#{version}/flares_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "e2112e7f9447636a25ae3962c81c9d0705b005d142c2963d6a6621681e59a745"
+      sha256 "98ed04cad52d82e25ae6dab5f968834cce146b2c6f8c7baca62d5b989092ff87"
       url "https://github.com/lfaoro/flares/releases/download/v#{version}/flares_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "79431cf209d58f2cfb46b14c2ab63f2e36cbb6e85d09ea5f97c8662c2f247ccd"
+      sha256 "deb5941f703967ca7392ba974aeda03715d5a9525e2d74f83977b37766179e9a"
       url "https://github.com/lfaoro/flares/releases/download/v#{version}/flares_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "d396447705d0c72a7b6fc59762d2a7d9c3a328ba54efcbcde0ac0f7bf3a9af1f"
+      sha256 "04f0dc7cbcd9b036e1bc1703035f2a4721ce143b8c27ac7bad2f6b83b25f29ae"
       url "https://github.com/lfaoro/flares/releases/download/v#{version}/flares_#{version}_linux_arm64.tar.gz"
     end
   end
